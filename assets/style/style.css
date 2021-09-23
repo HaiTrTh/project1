@@ -1,0 +1,282 @@
+* {
+    --primary-color-btn: #FD6D0C;
+    box-sizing: border-box;
+}
+
+#header {
+    background-color: var(--primary-color-btn);
+    font-size: 20px;
+}
+
+.header-left {
+    margin: 4px;
+    line-height: 56px;
+    color: white;
+}
+
+.header-right i {
+    padding: 8px;
+    border: 1px solid transparent;
+    background-color: black;
+    color: white;
+}
+
+.header-right i:hover {
+    background-color: var(--primary-color-btn);
+    border: 1px solid white;
+    transition: all 0.5s;
+}
+
+.navbar-brand--logo p {
+    color: var(--primary-color-btn);
+    font-size: 0.8em;
+    margin-top: -5px;
+}
+
+.navbar-nav--menu .nav-item .nav-link {
+    font-weight: bold;
+    color: #282828;
+    font-size: 1.4rem;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar-nav--menu .nav-item {
+    margin-left: 20px;
+}
+
+.nav-item__line {
+    width: 0%;
+    height: 3px;
+    background-color: var(--primary-color-btn);
+}
+
+.navbar-nav--menu .nav-item:hover>.nav-link,
+.navbar-nav--menu .nav-item:hover>.nav-item__line {
+    color: var(--primary-color-btn);
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.navbar-nav--menu .active .nav-link {
+    color: var(--primary-color-btn) !important;
+}
+
+.navbar-nav--menu .active .nav-item__line {
+    width: 100%;
+    font-weight: bold;
+}
+
+.carousel-caption--config {
+    bottom: 30%;
+}
+
+.carousel-caption--config h1 {
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.carousel-indicators--config {
+    bottom: 10%;
+}
+
+.btn-read-more {
+    border-radius: 0px;
+    padding: 4px;
+}
+
+.btn-read-more:hover {
+    background-color: var(--primary-color-btn);
+    transition: all 0.5s;
+}
+
+.modal-text--config {
+    font-size: 1.2em;
+}
+
+.modal-header--config h1 {
+    font-size: 2.2em;
+    color: var(--primary-color-btn);
+    margin: 0;
+}
+
+.modal-content--config p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+.modal-content--config h1 {
+    color: var(--primary-color-btn);
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+}
+
+
+/* WELCOME */
+
+.welcome-content h1 {
+    font-weight: 600;
+    color: var(--primary-color-btn);
+}
+
+.welcome-content span {
+    font-size: 17px;
+    letter-spacing: 4px;
+    font-weight: 500;
+    color: black;
+}
+
+.welcome-content__line {
+    max-width: 150px;
+    height: 2px;
+    background-color: black;
+    margin: auto;
+}
+
+.welcome-content p {
+    font-size: 15px;
+    color: #999;
+    line-height: 1.8em;
+    width: 80%;
+    padding: 0px;
+    margin: auto;
+}
+
+.welcome-content {
+    padding: 3rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .navbar-brand--logo h1 {
+        font-size: 30px;
+    }
+    .navbar-nav--menu .nav-item .nav-link {
+        font-size: 0.9em;
+    }
+    .navbar-nav--menu .nav-item {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .carousel-caption--config {
+        bottom: 17%;
+    }
+    .carousel-indicators--config {
+        bottom: 0;
+    }
+    .carousel-caption--config h1 {
+        font-size: 1.5em;
+    }
+    .carousel-indicators--config p {
+        font-size: 0.7em;
+        margin: 0;
+    }
+    .btn-read-more {
+        padding: 0;
+    }
+    /*Education */
+    .welcome-content h1 {
+        font-size: 25px;
+    }
+    .welcome-content p {
+        text-align: justify;
+    }
+    .welcome-content span {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .carousel-caption--config {
+        bottom: 10%;
+    }
+    .carousel-indicators--config {
+        bottom: 0;
+    }
+    .carousel-caption--config h1 {
+        font-size: 1.8em;
+    }
+    .carousel-indicators--config p {
+        font-size: 0.7em;
+        margin: 0;
+    }
+    .btn-read-more {
+        padding: 0;
+    }
+}
+
+.education-course i {
+    font-size: 30px;
+}
+
+.education-course h2 {
+    color: var(--primary-color-btn);
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.education-course h3 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.education-course p {
+    color: #999;
+    font-size: 15px;
+    line-height: 1.8rem;
+}
+
+
+/*  Start  */
+
+.start-section {
+    min-height: 400px;
+    background-image: url(/assets/img/1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 3rem 15px;
+}
+
+.start-title h1 {
+    font-weight: 600;
+    color: var(--primary-color-btn);
+    font-size: 40px;
+    letter-spacing: 0.5px;
+}
+
+.start-title span {
+    font-size: 17px;
+    letter-spacing: 4px;
+    font-weight: 500;
+    color: white;
+}
+
+.start-detail {
+    color: white;
+    box-shadow: 1px 1px 0.06 solid #ccc;
+    margin-bottom: 20px;
+}
+
+.start-detail i {
+    font-size: 40px;
+}
+
+.start-detail h2 {
+    margin: 0;
+    color: var(--primary-color-btn)
+}
+
+.start-detail p {
+    font-size: 2.4rem;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+@media screen and (min-width:560px) and (max-width: 760px) {
+    .education-course {
+        width: 100%;
+    }
+}
